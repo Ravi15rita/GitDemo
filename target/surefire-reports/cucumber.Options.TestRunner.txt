@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.229 s <<< FAILURE! -- in cucumber.Options.TestRunner
+Validating place API's.Verify if place is being Successfully added using AddPlaceAPI #1 -- Time elapsed: 2.230 s <<< ERROR!
+java.lang.IllegalArgumentException: No enum constant resources.APIResources.<getPlaceAPI>
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at resources.APIResources.valueOf(APIResources.java:1)
+	at stepDefinations.StepDefination.user_calls_with_http_request(StepDefination.java:47)
+	at stepDefinations.StepDefination.verify_place_id_created_maps_to_using_get_place_api(StepDefination.java:75)
+	at ✽.verify place_id created maps to "Ravi" using "<getPlaceAPI>"(file:///C:/Users/Ravir/eclipse-workspace/APIFramework/src/test/java/features/placeValidations.feature:9)
+
+Validating place API's.Verify if place is being Successfully added using AddPlaceAPI #2 -- Time elapsed: 0.252 s <<< ERROR!
+java.lang.IllegalArgumentException: No enum constant resources.APIResources.<getPlaceAPI>
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at resources.APIResources.valueOf(APIResources.java:1)
+	at stepDefinations.StepDefination.user_calls_with_http_request(StepDefination.java:47)
+	at stepDefinations.StepDefination.verify_place_id_created_maps_to_using_get_place_api(StepDefination.java:75)
+	at ✽.verify place_id created maps to "Roshan" using "<getPlaceAPI>"(file:///C:/Users/Ravir/eclipse-workspace/APIFramework/src/test/java/features/placeValidations.feature:9)
+
